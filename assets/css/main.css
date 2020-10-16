@@ -29,8 +29,8 @@
 	}
 
 	body, input, select, textarea {
-		/* color: #c8cccf; */
-		color: aqua;
+		/* Light Dark Color */
+		color: #c8cccf;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 14pt;
 		font-weight: 300;
@@ -165,7 +165,8 @@
 				width: 3.75em;
 				height: 3.75em;
 				border-radius: 100%;
-				/* border: solid 1px #333333; */
+				/* Light Dark Color */
+				border: solid 1px #333333;
 				line-height: 3.75em;
 				overflow: hidden;
 				text-align: center;
@@ -186,6 +187,7 @@
 					font-weight: 400;
 				}
 
+				/* Light Dark Color */
 				ul.icons li a:before {
 					color: #ffffff;
 					text-shadow: 1.25px 0px 0px #333333, -1.25px 0px 0px #333333, 0px 1.25px 0px #333333, 0px -1.25px 0px #333333;
@@ -251,6 +253,7 @@
 			margin-bottom: 1.5em;
 		}
 
+		/* Light Dark Color */
 			#main .avatar img {
 				display: block;
 				margin: 0 auto;
@@ -258,6 +261,7 @@
 				box-shadow: 0 0 0 1.5em #1B1B1B;
 			}
 
+			/* Light Dark Color */
 			#main .avatar:before {
 				content: '';
 				display: block;

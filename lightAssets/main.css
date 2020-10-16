@@ -31,6 +31,7 @@
 /* Type */
 
 	body, input, select, textarea {
+		/* Light Dark Color */
 		color: #414f57;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 14pt;
@@ -194,6 +195,7 @@
 				width: 3.75em;
 				height: 3.75em;
 				border-radius: 100%;
+				/* Light Dark Color */
 				border: solid 1px #c8cccf;
 				line-height: 3.75em;
 				overflow: hidden;
@@ -281,6 +283,7 @@
 			margin-bottom: 1.5em;
 		}
 
+		/* Light Dark Color */
 			#main .avatar img {
 				display: block;
 				margin: 0 auto;
@@ -288,6 +291,7 @@
 				box-shadow: 0 0 0 1.5em #ffffff;
 			}
 
+		/* Light Dark Color */
 			#main .avatar:before {
 				content: '';
 				display: block;
