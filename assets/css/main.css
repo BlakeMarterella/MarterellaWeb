@@ -1,7 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
 
-/* Basic */
+:root {
+	--text-color: #c8cccf;
+	--element-color: #333333;
+	--avatar-shadow: #1B1B1B;
+	--background-color: rgba(27, 27, 27, 0.972);
+	--hover-color: #748eff;
+}
 
+[data-theme="light"] {
+	--text-color: #333333;
+	--element-color: #c8cccf;
+	--avatar-shadow: #ffffff;
+	--background-color: #ffffff;
+}
+
+/* Basic */
 	@media screen and (max-width: 480px) {
 		html, body {
 			min-width: 320px;
@@ -30,7 +44,7 @@
 
 	body, input, select, textarea {
 		/* Light Dark Color */
-		color: #c8cccf;
+		color: var(--text-color);
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 14pt;
 		font-weight: 300;
@@ -73,11 +87,11 @@
 		}
 
 		a:hover {
-			color: #748eff;
+			color: var(--hover-color);
 		}
 
 	strong, b {
-		/* color: #313f47; */
+		font-weight: bold;
 	}
 
 	p {
@@ -88,7 +102,6 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		font: inherit;
-		/* color: #c8cccf; */
 		font-size: 1.85em;
 		line-height: 1.5;
 		margin: 0 0 0.75em 0;
@@ -166,7 +179,7 @@
 				height: 3.75em;
 				border-radius: 100%;
 				/* Light Dark Color */
-				border: solid 1px #333333;
+				border: solid 1px var(--element-color);
 				line-height: 3.75em;
 				overflow: hidden;
 				text-align: center;
@@ -190,11 +203,17 @@
 				/* Light Dark Color */
 				ul.icons li a:before {
 					color: #ffffff;
-					text-shadow: 1.25px 0px 0px #333333, -1.25px 0px 0px #333333, 0px 1.25px 0px #333333, 0px -1.25px 0px #333333;
+					text-shadow: 1.25px 0px 0px var(--element-color), 
+								-1.25px 0px 0px var(--element-color), 
+								 0px 1.25px 0px var(--element-color), 
+								0px -1.25px 0px var(--element-color);
 				}
 
 				ul.icons li a:hover:before {
-					text-shadow: 1.25px 0px 0px #7494ff, -1.25px 0px 0px #7494ff, 0px 1.25px 0px #7494ff, 0px -1.25px 0px #7494ff;
+					text-shadow: 1.25px 0px 0px var(--hover-color), 
+								-1.25px 0px 0px var(--hover-color), 
+								 0px 1.25px 0px var(--hover-color), 
+								 0px -1.25px 0px var(--hover-color);
 				}
 
 				ul.icons li a:before {
@@ -210,7 +229,7 @@
 				}
 
 				ul.icons li a:hover {
-					border-color: #7494ff;
+					border-color: var(--hover-color);
 				}
 
 		@media screen and (max-width: 480px) {
@@ -245,6 +264,7 @@
 		position: relative;
 		text-align: center;
 		width: 29em;
+		background: var(--background-color);
 	}
 
 		#main .avatar {
@@ -258,7 +278,7 @@
 				display: block;
 				margin: 0 auto;
 				border-radius: 50%;
-				box-shadow: 0 0 0 1.5em #1B1B1B;
+				box-shadow: 0 0 0 1.5em var(--avatar-shadow);
 			}
 
 			/* Light Dark Color */
@@ -271,7 +291,7 @@
 				width: calc(100% + 4em);
 				height: 1px;
 				z-index: -1;
-				background: #333333;
+				background: var(--element-color);
 			}
 
 		@media screen and (max-width: 480px) {
@@ -287,12 +307,8 @@
 				}
 
 				#main .avatar img {
-					display: block;
-					margin: 0 auto;
-					border-radius: 50%;
-					box-shadow: 0 0 0 .5em #1B1B1B;
+					box-shadow: 0 0 0 .5em var(--avatar-shadow);
 				}
-
 		}
 
 		body.is-preload #main {
