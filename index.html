@@ -54,6 +54,9 @@
 							<!-- Theme Switcher -->
 							<script>
 								const currentTheme = localStorage.getItem('theme');
+								if(currentTheme == null) {
+									localStorage.setItem('theme', 'dark');
+								}
 
 								if (currentTheme) {
 									// present the text (the text is opposite the current them)
