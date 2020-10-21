@@ -54,18 +54,17 @@
 							<!-- Theme Switcher -->
 							<script>
 								const currentTheme = localStorage.getItem('theme');
+								//on the first run (when currenttheme==null) set the theme to dark
 								if(currentTheme == null) {
 									localStorage.setItem('theme', 'dark');
 								}
 
-								if (currentTheme) {
-									// present the text (the text is opposite the current them)
-									document.getElementById("themeToggle").innerHTML = ((currentTheme == 'dark') ? "light" : "dark") + 
-									" mode";
+								// present the text (the text is opposite the current them)
+								document.getElementById("themeToggle").innerHTML = ((currentTheme == 'dark') ? "light" : "dark") + " mode";
 
-									//grab the current theme from cached memory
-									document.documentElement.setAttribute('data-theme', currentTheme);
-								}
+								//grab the current theme from cached memory
+								document.documentElement.setAttribute('data-theme', currentTheme);
+
 								
 								function switchTheme() {
 									if (localStorage.getItem('theme') == 'light') {
