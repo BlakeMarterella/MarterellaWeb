@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
 
+/* TODO: look into moving into SCSS for better variable integration
+ */
 :root {
 	--text-color: #c8cccf;
 	--element-color: #333333;
