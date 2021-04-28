@@ -15,6 +15,23 @@
 	--background-color: #ffffff;
 }
 
+
+/* Basic */
+
+body:after {
+	display: none;
+}
+
+/* Main */
+
+#main {
+	-moz-transform: none !important;
+	-webkit-transform: none !important;
+	-ms-transform: none !important;
+	transform: none !important;
+	opacity: 1 !important;
+}
+
 /* Basic */
 	@media screen and (max-width: 480px) {
 		html, body {
